@@ -1,0 +1,136 @@
+body {
+    background-color: #ffebef; /* Fundo rosa suave com notas de vermelho */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6fa6; /* Rosa mais claro para o cabeçalho */
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px;
+}
+
+h1 {
+    color: #fff; /* Texto branco para o título */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff; /* Links em branco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9abc; /* Rosa mais claro no hover */
+}
+
+h2 {
+    color: #ff9abc; /* Rosa mais claro para o título do formulário */
+    font-size: 2.2em;
+    margin: 20px 0;
+}
+
+form {
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    max-width: 400px; /* Largura máxima para o formulário */
+    width: 100%; /* Largura responsiva */
+    position: relative; /* Para adicionar elementos de fundo */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff6fa6; /* Rosa mais claro para as labels */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ff6fa6; /* Borda rosa mais clara */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #ff9abc; /* Rosa ainda mais claro no foco */
+    box-shadow: 0 0 5px rgba(255, 154, 196, 0.5); /* Sombra suave no foco */
+    outline: none;
+}
+
+button {
+    background-color: #ff6fa6; /* Rosa mais claro para o botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Botão ocupa toda a largura do formulário */
+}
+
+button:hover {
+    background-color: #ff9abc; /* Rosa ainda mais claro no hover */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+}
+
+button:active {
+    transform: translateY(0); /* Volta à posição original ao clicar */
+}
+
+/* Adicionando detalhes em rosa ao formulário */
+form::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 5px;
+    background-color: #ff9abc; /* Rosa mais claro */
+    border-radius: 10px;
+}
+
+form::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 5px;
+    background-color: #ff9abc; /* Rosa mais claro */
+    border-radius: 10px;
+}

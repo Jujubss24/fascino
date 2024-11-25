@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações globais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff5f5; /* Fundo suave em tom de rosa claro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffe3e3; /* Rosa claro */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ff6fa6; /* Rosa suave */
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: #ff6fa6; /* Rosa suave */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f55995; /* Cor mais escura para o hover */
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #ffe3e3; /* Rosa claro */
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #ff9abc; /* Rosa mais claro */
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Seções */
+.container {
+    background-color: #ff9abc; /* Rosa claro */
+    padding: 2rem 1rem;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Consolidar h2 */
+h2 {
+    color: #ff6fa6; /* Rosa escuro */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Produtos */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    background-color: #ffe3e3; /* Rosa claro */
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    color: #ff6fa6; /* Rosa suave */
+}
+
+.product-item p {
+    font-size: 1.2rem;
+}
+
+/* Login */
+#login {
+    background-color: #fef0f7; /* Rosa suave */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff9abc; /* Rosa suave no foco */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background: #ff6fa6; /* Rosa suave */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #fcc1d2; /* Rosa ainda mais claro no hover */
+}
+
+footer {
+    background: #ff6fa6; /* Rosa suave */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 3px solid #ff9abc; /* Adicionando um detalhe ao topo */
+}
+
+footer p {
+    margin: 0;
+}
+
